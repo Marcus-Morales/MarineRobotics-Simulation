@@ -41,8 +41,9 @@ Shader "Custom/DepthShader"
                 // Read depth from depth texture
                 float depth = tex2D(_CameraDepthTexture, i.uv).r;
                 // Convert depth to brightness (closer = brighter)
-                float brightness = 1.0 / (_DepthMultiplier * depth);
-                return fixed4(brightness, brightness, brightness, 1.0);
+                float brightness = (_DepthMultiplier * depth);
+                brightness =  /*255.0 - */clamp(brightness, 0.0, 255.0); // not to let values excede 255
+                return fixed4(brightness, brightness, brightness, 1.0); // rgba I think
             }
             ENDCG
         }
