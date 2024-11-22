@@ -4,6 +4,7 @@ Shader "Custom/DepthShader"
     {
         _DepthMultiplier ("Depth Multiplier", Float) = 1.0
         _DepthPower ("Depth Power", float) = 0.3
+        _DepthAdd ("Depth Add", float) = 0
     }
     SubShader
     {
@@ -29,6 +30,7 @@ Shader "Custom/DepthShader"
             sampler2D _CameraDepthTexture;
             float _DepthMultiplier;
             float _DepthPower;
+            float _DepthAdd;
 
             v2f vert (appdata_t v) //issue, the way the shader is implemented shows mirror image upside down
             {
@@ -44,7 +46,7 @@ Shader "Custom/DepthShader"
                 // Read depth from depth texture
                 float depth = tex2D(_CameraDepthTexture, i.uv).r;
                 // Convert depth to brightness (closer = brighter)
-                float brightness = pow(((_DepthMultiplier) * depth), _DepthPower);
+                float brightness = pow(((_DepthMultiplier) * depth ), _DepthPower)+ _DepthAdd;
                 brightness =  1.0 - clamp(brightness, 0.0, 1); // not to let values exceed 255
                 return fixed4(brightness, brightness, brightness, 1.0); // rgba I think
             }
