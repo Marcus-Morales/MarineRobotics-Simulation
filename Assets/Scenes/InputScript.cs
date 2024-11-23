@@ -2,12 +2,8 @@ using UnityEngine;
 
 public class InputScript : MonoBehaviour
 {
-    public float moveSpeed;
 
-    float xInput;
-    float yInput;
-
-    Rigidbody rb;
+    private Rigidbody rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,17 +14,13 @@ public class InputScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        xInput = Input.GetAxis("Horizontal");
-        yInput = Input.GetAxis("Vertical");
+        float h = Input.GetAxis("Horizontal") * 10;
+        float v = Input.GetAxis("Vertical") * 15;
         
-        if(xInput != 0 || yInput != 0) {
-            Debug.Log("Input detected: xInput = " + xInput + ", yInput = " + yInput);
-        }
-
-    }
-
-    private void FixedUpdate() {
-        rb.AddForce(xInput * moveSpeed, 0, yInput * moveSpeed);
+        Vector3 vel = rb.linearVelocity;
+        vel.x = h;
+        vel.z = v;
+        rb.linearVelocity = vel;
     }
 
 }
