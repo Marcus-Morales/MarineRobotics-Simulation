@@ -7,8 +7,103 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Borde_Repisa
+    second: {fileID: 2100000, guid: 7c6712a4ac24a4866962e0aaf5ead5d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_Banderines
+    second: {fileID: 2100000, guid: 7ae19eb931d3c43e3a99b642a5e37227, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Color_Base_Piscina
     second: {fileID: 2100000, guid: aa942c524e89842848424517f0737fee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_Borde_Piscina
+    second: {fileID: 2100000, guid: 075f0c03a86a7428aab2a3603286fcea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_Boya_Amarillo
+    second: {fileID: 2100000, guid: cb34e1ed8e85a41cea505f8e4b2b1c7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_Boya_Azul
+    second: {fileID: 2100000, guid: dcb14b7f521054534a69dec0abadbce3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_Boya_Rojo
+    second: {fileID: 2100000, guid: 7ae19eb931d3c43e3a99b642a5e37227, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_Boya_Verde
+    second: {fileID: 2100000, guid: 4260285cea19f4c8c8c163ba243586d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_Lineas_Fondo
+    second: {fileID: 2100000, guid: 8af5cfbf6ecbf474ea25edea753cd095, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_Lineas_Fondo.001
+    second: {fileID: 2100000, guid: 8af5cfbf6ecbf474ea25edea753cd095, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_Lineas_Fondo.002
+    second: {fileID: 2100000, guid: 8af5cfbf6ecbf474ea25edea753cd095, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fondo_Sensor
+    second: {fileID: 2100000, guid: 7c6712a4ac24a4866962e0aaf5ead5d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Goma_Trampolin
+    second: {fileID: 2100000, guid: 7d1104fe41285904c9e8480ce331e1ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marco_Sensor
+    second: {fileID: 2100000, guid: 075f0c03a86a7428aab2a3603286fcea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Medio_Sensor
+    second: {fileID: 2100000, guid: 7c6712a4ac24a4866962e0aaf5ead5d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Trampolin
+    second: {fileID: 2100000, guid: 7c6712a4ac24a4866962e0aaf5ead5d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Postes_Banderas
+    second: {fileID: 2100000, guid: 8af5cfbf6ecbf474ea25edea753cd095, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Suelo
+    second: {fileID: 2100000, guid: 8af5cfbf6ecbf474ea25edea753cd095, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Suelo_Trampolin
+    second: {fileID: 2100000, guid: 075f0c03a86a7428aab2a3603286fcea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trampolin
+    second: {fileID: 2100000, guid: f2c34f6669b5b49d689da9af9c7bfd1c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
