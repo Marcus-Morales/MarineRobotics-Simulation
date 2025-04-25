@@ -22,5 +22,7 @@ A Unity-based simulation environment for testing and visualizing marine robotic 
 
 ## Screenshots
 
-![Underwater Scene](images/underwater_scene.png) * main underwater simulation environment of the RoboSub competition
+![Underwater Scene](PoolEnvironment.png) * main underwater simulation environment of the RoboSub competition
+
+![Depth Shader Scene](DepthShader.png) * depth shader practice: Enhancing underwater depth and immersion in the simulation."
 
